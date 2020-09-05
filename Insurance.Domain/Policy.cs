@@ -10,7 +10,12 @@ namespace Insurance.Domain
         /// <summary>
         /// Gets or sets the Id.
         /// </summary>
-        public Int64 Id { get; set; }
+        public long Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets the CustomerId.
+        /// </summary>
+        public long CustomerId { get; set; }
 
         /// <summary>
         /// Gets or sets the Name.
