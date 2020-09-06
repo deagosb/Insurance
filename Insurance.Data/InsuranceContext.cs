@@ -1,5 +1,6 @@
 ﻿using Insurance.Domain;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Insurance.Data
 {
@@ -53,6 +54,7 @@ namespace Insurance.Data
                     Name = "Poliza Contra Incendio",
                     TypeOfCovering = "Incendio",
                     CoveragePercentage = 100,
+                    StartOfValidity = DateTime.Now.AddDays(2),
                     Period = 12,
                     Price = 1000000,
                     TypeOfRisk = "Bajo"
@@ -63,11 +65,12 @@ namespace Insurance.Data
                     Name = "Poliza Contra Robo",
                     TypeOfCovering = "Robo",
                     CoveragePercentage = 100,
+                    StartOfValidity = DateTime.Now.AddDays(5),
                     Period = 12,
                     Price = 1000000,
                     TypeOfRisk = "Medio-Alto"
                 }
-            );
+            ); ;
         }
     }
 }

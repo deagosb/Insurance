@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Insurance.Data.Migrations
 {
     [DbContext(typeof(InsuranceContext))]
-    [Migration("20200906014117_Initial")]
+    [Migration("20200906014637_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -94,7 +94,7 @@ namespace Insurance.Data.Migrations
                             Name = "Poliza Contra Incendio",
                             Period = 12,
                             Price = 1000000f,
-                            StartOfValidity = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartOfValidity = new DateTime(2020, 9, 7, 20, 46, 37, 334, DateTimeKind.Local).AddTicks(742),
                             TypeOfCovering = "Incendio",
                             TypeOfRisk = "Bajo"
                         },
@@ -106,7 +106,7 @@ namespace Insurance.Data.Migrations
                             Name = "Poliza Contra Robo",
                             Period = 12,
                             Price = 1000000f,
-                            StartOfValidity = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartOfValidity = new DateTime(2020, 9, 10, 20, 46, 37, 335, DateTimeKind.Local).AddTicks(2313),
                             TypeOfCovering = "Robo",
                             TypeOfRisk = "Medio-Alto"
                         });

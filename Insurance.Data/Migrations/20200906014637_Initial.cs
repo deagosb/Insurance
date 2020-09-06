@@ -59,12 +59,12 @@ namespace Insurance.Data.Migrations
             migrationBuilder.InsertData(
                 table: "Policies",
                 columns: new[] { "PolicyId", "CoveragePercentage", "CustomerId", "Name", "Period", "Price", "StartOfValidity", "TypeOfCovering", "TypeOfRisk" },
-                values: new object[] { 1L, 100, 1L, "Poliza Contra Incendio", 12, 1000000f, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Incendio", "Bajo" });
+                values: new object[] { 1L, 100, 1L, "Poliza Contra Incendio", 12, 1000000f, new DateTime(2020, 9, 7, 20, 46, 37, 334, DateTimeKind.Local).AddTicks(742), "Incendio", "Bajo" });
 
             migrationBuilder.InsertData(
                 table: "Policies",
                 columns: new[] { "PolicyId", "CoveragePercentage", "CustomerId", "Name", "Period", "Price", "StartOfValidity", "TypeOfCovering", "TypeOfRisk" },
-                values: new object[] { 2L, 100, 2L, "Poliza Contra Robo", 12, 1000000f, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Robo", "Medio-Alto" });
+                values: new object[] { 2L, 100, 2L, "Poliza Contra Robo", 12, 1000000f, new DateTime(2020, 9, 10, 20, 46, 37, 335, DateTimeKind.Local).AddTicks(2313), "Robo", "Medio-Alto" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Policies_CustomerId",
