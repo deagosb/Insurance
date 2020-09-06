@@ -22,8 +22,8 @@ namespace Insurance.Domain
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the OrderDetails.
+        /// Gets or sets the Policies.
         /// </summary>
-        public List<Policy> OrderDetails { get; set; }
+        public virtual ICollection<Policy> Policies { get; set; }
     }
 }
