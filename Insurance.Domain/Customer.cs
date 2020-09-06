@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Insurance.Domain
 {
@@ -10,6 +12,8 @@ namespace Insurance.Domain
         /// <summary>
         /// Gets or sets the CustomerId.
         /// </summary>
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long CustomerId { get; set; }
 
         /// <summary>
