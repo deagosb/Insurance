@@ -8,9 +8,9 @@ namespace Insurance.Domain
     public class Policy
     {
         /// <summary>
-        /// Gets or sets the Id.
+        /// Gets or sets the PolicyId.
         /// </summary>
-        public long Id { get; set; }
+        public long PolicyId { get; set; }
 
         /// <summary>
         /// Gets or sets the CustomerId.
