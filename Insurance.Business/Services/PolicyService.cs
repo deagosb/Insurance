@@ -18,7 +18,7 @@ namespace Insurance.Business.Services
         /// Initializes a new instance of the <see cref="PolicyService"/> class.
         /// </summary>
         /// <param name="policyRepository">The policyRepository<see cref="PolicyRepository"/>.</param>
-        public PolicyService(PolicyRepository policyRepository)
+        public PolicyService(IPolicyRepository policyRepository)
         {
             _policyRepository = policyRepository;
         }
