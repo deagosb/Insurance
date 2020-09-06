@@ -15,6 +15,13 @@ namespace Insurance.Data
         IEnumerable<Policy> GetAll();
 
         /// <summary>
+        /// The GetByCustomerId.
+        /// </summary>
+        /// <param name="customerId">The customerId<see cref="long"/>.</param>
+        /// <returns>The <see cref="IEnumerable{Policy}"/>.</returns>
+        IEnumerable<Policy> GetByCustomerId(long customerId);
+
+        /// <summary>
         /// The GetById.
         /// </summary>
         /// <param name="policyId">The policyId<see cref="long"/>.</param>
