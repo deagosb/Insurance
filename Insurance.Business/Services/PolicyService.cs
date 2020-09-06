@@ -87,7 +87,7 @@ namespace Insurance.Business.Services
         /// <returns>The <see cref="bool"/>.</returns>
         public bool ComplyBusinessRule(string typeOfRisk, int coveragePercentage)
         {
-            if (typeOfRisk == "alto")
+            if (typeOfRisk.ToLower() == "alto")
             {
                 if (coveragePercentage > 50)
                 {
