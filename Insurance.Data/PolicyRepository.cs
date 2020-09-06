@@ -61,6 +61,7 @@ namespace Insurance.Data
         public void Insert(Policy policy)
         {
             _context.Policies.Add(policy);
+            Save();
         }
 
         /// <summary>
@@ -70,6 +71,7 @@ namespace Insurance.Data
         public void Update(Policy policy)
         {
             _context.Entry(policy).State = EntityState.Modified;
+            Save();
         }
 
         /// <summary>
@@ -80,6 +82,7 @@ namespace Insurance.Data
         {
             Policy policy = _context.Policies.Find(policyId);
             _context.Policies.Remove(policy);
+            Save();
         }
 
         /// <summary>

@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insurance", "Insurance\Insu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insurance.Domain", "Insurance.Domain\Insurance.Domain.csproj", "{3EF6E3E7-B63D-4615-94ED-CBB137CF3C09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurance.Data", "Insurance.Data\Insurance.Data.csproj", "{FED5CEE2-70FA-4E70-A301-E8ACE59B7C40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insurance.Data", "Insurance.Data\Insurance.Data.csproj", "{FED5CEE2-70FA-4E70-A301-E8ACE59B7C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurance.Business", "Insurance.Business\Insurance.Business.csproj", "{3B886594-DC06-460F-959E-0677581FD9D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FED5CEE2-70FA-4E70-A301-E8ACE59B7C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FED5CEE2-70FA-4E70-A301-E8ACE59B7C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FED5CEE2-70FA-4E70-A301-E8ACE59B7C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B886594-DC06-460F-959E-0677581FD9D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B886594-DC06-460F-959E-0677581FD9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B886594-DC06-460F-959E-0677581FD9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B886594-DC06-460F-959E-0677581FD9D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
