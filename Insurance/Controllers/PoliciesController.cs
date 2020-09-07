@@ -36,7 +36,6 @@ namespace Insurance.Controllers
             return Ok(_policyService.GetAll());
         }
 
-        // GET: api/Policies/customer/1
         /// <summary>
         /// The GetPoliciesByCustomer.
         /// </summary>
@@ -48,7 +47,6 @@ namespace Insurance.Controllers
             return Ok(_policyService.GetByCustomerId(customerId));
         }
 
-        // GET: api/Policies/5
         /// <summary>
         /// The GetPolicy.
         /// </summary>
@@ -67,9 +65,6 @@ namespace Insurance.Controllers
             return Ok(policy);
         }
 
-        // PUT: api/Policies/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         /// <summary>
         /// The PutPolicy.
         /// </summary>
@@ -89,9 +84,6 @@ namespace Insurance.Controllers
             return NoContent();
         }
 
-        // POST: api/Policies
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         /// <summary>
         /// The PostPolicy.
         /// </summary>
@@ -105,7 +97,6 @@ namespace Insurance.Controllers
             return CreatedAtAction("GetPolicy", new { id = policy.PolicyId }, policy);
         }
 
-        // DELETE: api/Policies/5
         /// <summary>
         /// The DeletePolicy.
         /// </summary>
@@ -123,16 +114,6 @@ namespace Insurance.Controllers
             _policyService.Delete(id);
 
             return policy;
-        }
-
-        /// <summary>
-        /// The PolicyExists.
-        /// </summary>
-        /// <param name="id">The id<see cref="long"/>.</param>
-        /// <returns>The <see cref="bool"/>.</returns>
-        private bool PolicyExists(long id)
-        {
-            return (_policyService.GetById(id) != null);
         }
     }
 }

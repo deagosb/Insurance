@@ -1,0 +1,22 @@
+<h3 id="tableLabel">Client Policies List</h3>
+
+<p *ngIf="!policies"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="policies">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Period</th>
+      <th>Start Of Validity</th>
+      <th>Type Of Covering</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let policy of policies">
+      <td>{{ policy.name }}</td>
+      <td>{{ policy.period }}</td>
+      <td>{{ policy.startOfValidity }}</td>
+      <td>{{ policy.typeOfCovering }}</td>
+    </tr>
+  </tbody>
+</table>
